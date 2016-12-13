@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FriendMasterPage.master.cs" Inherits="FriendMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div><asp:Label ID="lbzonename" runat="server" Text="Label"></asp:Label>
+        <br />
+         <asp:Image ID="Image" runat="server" Height="98px" Width="101px"  />
+        <asp:Label ID="lbnickname" runat="server" Text="Label"></asp:Label>
+        <asp:Button ID="btnAdd" runat="server" Text="添加好友" OnClick="btnAdd_Click" Visible ="true"  />
+        <asp:Label ID="lbAdd" runat="server" Text="已添加" Visible ="false" ></asp:Label>
+        <br />
+        <asp:Button ID="btnLog" runat="server" Text="日志" OnClick="btnLog_Click" />
+        <asp:Button ID="btnPhotos" runat="server" Text="相册" OnClick="btnPhotos_Click" />
+        <asp:Button ID="btnMessage" runat="server" Text="留言板" OnClick="btnMessage_Click" />
+        <asp:Button ID="btnShuoShuo" runat="server" Text="说说" OnClick="btnShuoShuo_Click" />
+        <asp:Button ID="btnInformation" runat="server" Text="个人档" OnClick="btnInformation_Click" />
+        <asp:Button ID="btnVisitor" runat="server" Text="访客" OnClick="btnVisitor_Click" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnMycenter" runat="server" Text="个人中心" OnClick="btnMycenter_Click" />
+        <asp:Button ID="btnLogout" runat="server" Text="注销" OnClick="btnLogout_Click" />
+
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+       
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+
