@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div><asp:Label ID="lbzonename" runat="server" Text="Label"></asp:Label>
+        <br />
+         <asp:ImageButton ID="ImageButton" runat="server" Height="98px" Width="101px" OnClick="ImageButton_Click" />
+        <asp:Label ID="lbnickname" runat="server" Text="Label"></asp:Label>
+        <br />
+        <asp:Button ID="btnLog" runat="server" Text="日志" OnClick="btnLog_Click" />
+        <asp:Button ID="btnPhotos" runat="server" Text="相册" OnClick="btnPhotos_Click" />
+        <asp:Button ID="btnMessage" runat="server" Text="留言板" OnClick="btnMessage_Click" />
+        <asp:Button ID="btnShuoShuo" runat="server" Text="说说" OnClick="btnShuoShuo_Click" />
+        <asp:Button ID="btnInformation" runat="server" Text="个人档" OnClick="btnInformation_Click" />
+        <asp:Button ID="btnFriend" runat="server" Text="好友" OnClick="btnFriend_Click" />
+        <asp:Button ID="btnVisitor" runat="server" Text="访客" OnClick="btnVisitor_Click" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnMycenter" runat="server" Text="个人中心" OnClick="btnMycenter_Click" />
+        <asp:Button ID="btnSetup" runat="server" Text="设置" OnClick="btnSetup_Click" />
+        <asp:Button ID="btnLogout" runat="server" Text="注销" OnClick="btnLogout_Click" />
+
+        <br />
+        <asp:FileUpload ID="myFileUpload" runat="server" Visible="False" />
+        <asp:Label ID="lbImage" runat="server" Text="Label" Visible="False"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnUpload" runat="server" Text="上传图片" OnClick="btnUpload_Click" style="height: 27px" Visible="False" />
+    
+        <asp:Button ID="btnreturn" runat="server" Text="返回" OnClick="btnreturn_Click" style="height: 27px" Visible="False" />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+       
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
